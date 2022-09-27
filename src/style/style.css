@@ -167,15 +167,24 @@ p {
 }
 
 .count-title {
-    display: block;
+    position: relative;
+    display: inline-block;
     margin-bottom: 9px;
     font-size: 46px;
     line-height: 63px;
-    color: #13253A;
+    padding-right: 28px;
 }
 
-.count-title span {
-    color:  ;
+.count-title:after {
+    content: '+';
+    position: absolute;
+    color: #FF7F57;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%)
+}
 
+.count-text {
+    display: block;
 }
 
